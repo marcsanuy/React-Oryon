@@ -10,11 +10,39 @@ export default class App extends React.Component {
       notes: [
         {
           id: uuid.v4(),
-          task: 'Learn React'
+          task: 'Key Partners'
         },
         {
           id: uuid.v4(),
-          task: 'Do laundry'
+          task: 'Key Activities'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Key Resources'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Value Propositions'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Customer Relationships'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Channels'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Customer Segments'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Cost Structure'
+        },
+        {
+          id: uuid.v4(),
+          task: 'Revenue Streams'
         }
       ]
     }
@@ -24,7 +52,7 @@ export default class App extends React.Component {
 
     return (
       <div>
-        <button onClick={this.addNote}>+</button>
+        <button className="add-note" onClick={this.addNote}>+</button>
         <Notes
           notes={notes}
           onNoteClick={this.activateNoteEdit}
