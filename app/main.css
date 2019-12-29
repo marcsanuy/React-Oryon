@@ -19,7 +19,7 @@ body {
   margin: 0.5em;
   padding-left: 0;
 
-  max-width: 15em;
+  max-width: 13em;
   list-style: none;
 }
 
@@ -35,7 +35,7 @@ body {
   border: 2px solid #0016b0;
 }
 .note:hover {
-  box-shadow: 0 0 1em .03em rgba(0,0,0,.7);
+  box-shadow: 0 0 1em .07em rgba(0,0,0,.7);
 
   transition: .6s;
 }
