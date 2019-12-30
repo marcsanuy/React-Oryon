@@ -1,25 +1,25 @@
 body {
-  background-color: rgb(138, 212, 255);
-
+  background-color: rgb(146, 186, 206);
+  font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .add-note, .add-lane{
   text-decoration: none;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
-    color: #ffffff;
-    background-color: #1883ba;
+    color: #000000;
+    background-color: #18cf5fe3;
     border-radius: 6px;
-    border: 2px solid #0016b0;
-}
+    border: 2px solid #000000;
+  }
 
 .notes {
   margin: 0.5em;
-  padding-left: 0;
+  padding-left: 0.6em;
 
-  max-width: 13em;
+  max-width: 15em;
   list-style: none;
 }
 
@@ -28,11 +28,12 @@ body {
 
   margin-bottom: 0.5em;
   padding: 0.5em;
-  color: #ffffff;
-  background-color: #1883ba;
+  color: #fdfdfd;
+  font-size: unset;
+  background-color: #3085af;
   box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
   border-radius: 6px;
-  border: 2px solid #0016b0;
+  border: 2px solid #000000;
 }
 .note:hover {
   box-shadow: 0 0 1em .07em rgba(0,0,0,.7);
@@ -41,7 +42,6 @@ body {
 }
 
 .note .value {
-  /* force to use inline-block so that it gets minimum height */
   display: inline-block;
 }
 
@@ -52,9 +52,9 @@ body {
   float: right;
 
   padding: 0;
-  color: #ffffff;
-  background-color: #1883ba;
-  border: none;
+  background-color: #b62d20;
+    border-radius: 6px;
+    border: 2px solid #000000;
 
   cursor: pointer;
 
@@ -62,6 +62,64 @@ body {
 }
 .note:hover .delete {
   visibility: visible;
+}
+
+.lane {
+  display: inline-block;
+
+  margin: 1em;
+
+  background-color: #6991a5;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  border-radius: 0.5em;
+
+  min-width: 10em;
+  vertical-align: top;
+}
+
+.lane-header {
+  overflow: auto;
+
+  padding: 1em;
+
+  background-color: #41586494;
+    border-radius: 6px;
+    
+
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.lane-name {
+  float: left;
+}
+
+.lane-add-note {
+  float: left;
+  
+  margin-right: 0.5em;
+}
+
+.lane-delete {
+  float: right;
+
+  margin-left: 0.5em;
+
+ }
+
+
+
+.lane-delete button {
+  cursor: pointer;
+  
+  padding: 10px;
+    font-weight: 300;
+    font-size: 13px;
+  background-color: #b62d20;
+    border-radius: 6px;
+    border: 2px solid #000000;
+  
 }
 
 
