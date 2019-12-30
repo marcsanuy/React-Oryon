@@ -9,40 +9,12 @@ export default class NoteStore {
     this.notes = [
         {
             id: uuid.v4(),
-            task: 'Key Partners'
+            task: 'Action 1'
           },
           {
             id: uuid.v4(),
-            task: 'Key Activities'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Key Resources'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Value Propositions'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Customer Relationships'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Channels'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Customer Segments'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Cost Structure'
-          },
-          {
-            id: uuid.v4(),
-            task: 'Revenue Streams'
-          }
+            task: 'Action 2'
+          }        
     ];
   }
   create(note) {
